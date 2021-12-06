@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAEA;EACE,kBAHQ;EAIR","file":"../main.css","sourcesContent":["$bgColor: blue;\r\n\r\nbody {\r\n  background-color: $bgColor;\r\n  padding: 1rem;\r\n}\r\n"]}

@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer-2",
+    "kamikillerto.vscode-colorize",
+    "sleistner.vscode-fileutils",
+    "bierner.github-markdown-preview",
+    "bradgashler.htmltagwrap",
+    "zhuangtongfa.material-theme",
+    "techer.open-in-browser",
+    "esbenp.prettier-vscode",
+    "nobuhito.printcode",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

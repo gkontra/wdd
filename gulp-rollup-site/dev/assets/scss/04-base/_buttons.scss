@@ -1,0 +1,21 @@
+.btn {
+  background-color: #ccc;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  letter-spacing: 1px;
+  border: 3px solid $color-1;
+  font-size: $font-size-base;
+  font-weight: bold;
+}
+
+.button-send {
+  background-color: $color-1;
+  color: white;
+  &:focus,
+  &:hover {
+    background-color: white;
+    border: 3px solid $color-1;
+    color: $color-1;
+  }
+}

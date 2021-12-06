@@ -1,0 +1,57 @@
+.m-logo-main {
+  margin: -2rem 0 4.5rem 0;
+  width: 240px;
+  height: 240px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230 230' style='enable-background:new 0 0 230 230' xml:space='preserve'%3E%3Cpath d='M115.4 10h-105v105c0 58 47 105 105 105s105-47 105-105-47-105-105-105m0 183.9c-43.5 0-78.9-35.4-78.9-78.9s35.4-78.9 78.9-78.9c25.9 0 48.8 12.4 63.3 31.7l-10.8 7.7C155.8 59.3 136.8 49 115.4 49c-36.4 0-66 29.5-66 66s29.5 66 66 66c34.8 0 63.3-27.2 65.7-61.5h-60.7l9.5 17.7h-17.7l-15-24.8 15-23.5h17.7l-10.3 17.7H194c.3 2.9.5 5.8.5 8.7 0 43.2-35.6 78.6-79.1 78.6z' style='fill-rule:evenodd;clip-rule:evenodd;fill:%23106186'/%3E%3C/svg%3E")
+    center center no-repeat;
+  figcaption {
+    display: none;
+  }
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    height: 8%;
+    border-radius: 50%;
+    box-shadow: 0px 30px 10px rgba(black, 0.4);
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.5;
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale3d(0.8, 0.5, 0.8);
+  }
+
+  to {
+    opacity: 0.5;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

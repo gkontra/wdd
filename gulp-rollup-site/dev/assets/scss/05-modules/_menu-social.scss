@@ -1,0 +1,70 @@
+.m-menu-social {
+  ul.list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    li {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        background-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        padding: 5px 0;
+        text-align: center;
+        color: $black;
+        border-bottom: none;
+
+        &::before {
+          font-size: 18px;
+          font-family: 'Font Awesome 5 Brands';
+        }
+
+        &.link-youtube {
+          &:hover,
+          &:focus {
+            background-color: red;
+            color: white;
+          }
+          &::before {
+            content: '\f167';
+          }
+        }
+        &.link-facebook-f {
+          &:hover,
+          &:focus {
+            background-color: #3b5998;
+            color: white;
+          }
+          &::before {
+            content: '\f39e';
+          }
+        }
+        &.link-instagram {
+          &:hover,
+          &:focus {
+            background-color: #e1306c;
+            color: white;
+          }
+          &::before {
+            content: '\f16d';
+          }
+        }
+        &.link-twitch {
+          &:hover,
+          &:focus {
+            background-color: #9146ff;
+            color: white;
+          }
+          &::before {
+            content: '\f1e8';
+          }
+        }
+      }
+    }
+  }
+}
